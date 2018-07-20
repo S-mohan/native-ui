@@ -1,0 +1,57 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.nui-dialog {
+  overflow: hidden;
+  min-width: 240px;
+  max-width: 90%;
+  padding: 0;
+  border-width: 0;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.nui-dialog .nui-dialog__head {
+  padding: 20px 20px 10px 20px;
+  font-size: 18px;
+}
+
+.nui-dialog .nui-dialog__title {
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+.nui-dialog .nui-dialog__body {
+  padding: 20px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.nui-dialog .nui-dialog__foot {
+  padding: 10px 20px 20px 20px;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end
+}
+
+.nui-dialog .nui-dialog__btn {
+  display: inline-flex;
+  line-height: 22px;
+  padding: 5px 12px;
+  font-size: 14px;
+  margin-left: 20px;
+  border: 1px solid #dedede;
+  background-color: transparent;
+  cursor: pointer;
+  user-select: none;
+}

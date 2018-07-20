@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./dialog.css">
+</head>
+<body>
+  
+  <button id="toggle-demo1">open dialog</button>
+
+  <dialog id="dialog1" class="nui-dialog">
+    <header class="nui-dialog__head">
+      <h3 class="nui-dialog__title">Dialog</h3>
+    </header>
+    <div class="nui-dialog__body">
+        dialog is an element for a popup box in a web page, including a modal option which will make the rest of the page inert during use. This could be useful to block a user's interaction until they give you a response, or to confirm an action.
+    </div>
+    <footer class="nui-dialog__foot">
+      <button class="nui-dialog__btn">cancel</button>
+      <button class="nui-dialog__btn">confirm</button>
+    </footer>
+  </dialog>
+
+
+  <script>
+    var demo1Btn = document.getElementById('toggle-demo1')
+    var dialog1 = document.getElementById('dialog1')
+    demo1Btn.addEventListener('click', function () {
+      dialog1.showModal()
+    })  
+
+
+  </script>
+
+</body>
+</html>
