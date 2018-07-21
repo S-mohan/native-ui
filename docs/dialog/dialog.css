@@ -8,6 +8,11 @@ html {
   box-sizing: inherit;
 }
 
+:root {
+  --primary-color: #43a3fb;
+  --primary-color-hover: #3c93e2
+}
+
 .nui-dialog {
   overflow: hidden;
   min-width: 240px;
@@ -88,25 +93,25 @@ html {
 
 .nui-dialog .nui-dialog__close:hover,
 .nui-dialog .nui-dialog__close:active {
-  color: #43a3fb;
+  color: var(--primary-color);
 }
 
 .nui-dialog .nui-dialog__btn:hover,
 .nui-dialog .nui-dialog__btn:active {
-  background-color: #e7e7e7;
+  background-color: #e9ecef;
   transition: background-color .2s;
 }
 
 .nui-dialog .btn-confirm {
   color: #fff;
-  border-color: #43a3fb;
-  background-color: #43a3fb;
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 .nui-dialog .btn-confirm:hover,
 .nui-dialog .btn-confirm:active {
-  border-color: #3c93e2;
-  background-color: #3c93e2;
+  border-color: var(--primary-color-hover);
+  background-color: var(--primary-color-hover);
 }
 
 @keyframes slide-up {

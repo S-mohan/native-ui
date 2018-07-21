@@ -10,5 +10,6 @@
 
 ## 使用
 ```html
-<input type="range" class="nui-range">
+<input type="range" value="20" class="nui-range">
+<input type="range" value="20" class="nui-range" disabled>
 ```
