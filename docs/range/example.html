@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Range | native-ui</title>
+  <link rel="stylesheet" href="https://s-mohan.github.io/native-ui/assets/css/style.css?v=580703017e099ee9af4d5a1c875ac8d3896cfe56">
+  <link rel="stylesheet" href="./range.css">
+  <style>
+    button {
+      display: inline-block;
+      padding: 5px 10px;
+      line-height: 20px;
+      font-family: inherit;
+    }
+    article > section {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <section class="page-header">
+    <h1 class="project-name">Range</h1>
+    <h2 class="project-tagline">HTML原生UI组件</h2>
+    <a href="https://github.com/S-mohan/native-ui" class="btn">View on GitHub</a>
+    <a href="https://s-mohan.github.io/native-ui/range/" class="btn">Document</a>
+  </section>
+  <article class="main-content">
+    <section>
+      <h3>default style</h3>
+      <input type="range" step="1" min="0">
+      <br>
+      <br>
+      <input type="range" step="1" disabled>
+    </section>
+
+    <section>
+      <h3>custom style</h3>
+      <input type="range" step="1" min="0" max="100" class="nui-range">
+      <br>
+      <br>
+      <input type="range" step="20" value="20" class="nui-range" disabled>
+    </section>
+
+
+  </article>
+
+</body>
+</html>
