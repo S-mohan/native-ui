@@ -44,4 +44,12 @@ dialog.addEventListener('cancel', handle)
 </dialog> 
 ```
 
+## 兼容性及polyfill
+
+- `Chrome 37+`
+- `Opera 24+`
+
+- 可以使用[`dialog-polyfill`](https://github.com/GoogleChrome/dialog-polyfill)来兼容其他浏览器
+
+
 ## [example](https://s-mohan.github.io/native-ui/dialog/example.html)
