@@ -7,6 +7,13 @@
 
 [![dialog ui](https://s-mohan.github.io/native-ui/img/dialog.png)](https://s-mohan.github.io/native-ui/dialog/)
 
+
+## Progress
+
+> `progress`元素用来显示一项任务的完成进度. [example](https://s-mohan.github.io/native-ui/progress/)
+
+[![progress ui](https://s-mohan.github.io/native-ui/img/progress2.png)](https://s-mohan.github.io/native-ui/progress/)
+
 ## Range
 
 > `input[type="range"]`元素显示为滑块，表示输入类型用于应该包含指定范围值的输入字段. [example](https://s-mohan.github.io/native-ui/range/)

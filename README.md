@@ -1,14 +1,13 @@
 # native-ui
 > HTML原生UI组件
 
-## Dialog
+## [HomePage](https://s-mohan.github.io/native-ui/)
 
-> `dialog`元素表示一个对话框或者交互式窗口组件. [example](https://s-mohan.github.io/native-ui/dialog/)
-
+### Dialog
 [![dialog ui](https://s-mohan.github.io/native-ui/img/dialog.png)](https://s-mohan.github.io/native-ui/dialog/)
 
-## Range
+### Progress
+[![progress ui](https://s-mohan.github.io/native-ui/img/progress2.png)](https://s-mohan.github.io/native-ui/progress/)
 
-> `input[type="range"]`元素显示为滑块，表示输入类型用于应该包含指定范围值的输入字段. [example](https://s-mohan.github.io/native-ui/range/)
-
+### Range
 [![range ui](https://s-mohan.github.io/native-ui/img/range2.png)](https://s-mohan.github.io/native-ui/range/)

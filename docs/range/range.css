@@ -28,7 +28,7 @@ html {
   height: 6px;
   cursor: pointer;
   transition: all .2s ease;
-  background: #3c93e2;
+  background-color: #3c93e2;
   border-radius: 2px;
 }
 
@@ -38,21 +38,21 @@ html {
   height: 18px;
   width: 18px;
   border-radius: 50%;
-  background: #fff;
+  background-color: #fff;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -6px;
 }
 
 .nui-range:focus::-webkit-slider-runnable-track {
-  background: #3c93e2;
+  background-color: #3c93e2;
 }
 
 .nui-range::-moz-range-track {
   height: 6px;
   cursor: pointer;
   transition: all .2s ease;
-  background: #3c93e2;
+  background-color: #3c93e2;
   border-radius: 2px;
 }
 
@@ -62,7 +62,7 @@ html {
   height: 18px;
   width: 18px;
   border-radius: 50%;
-  background: #fff;
+  background-color: #fff;
   cursor: pointer;
 }
 
@@ -70,19 +70,19 @@ html {
   height: 6px;
   cursor: pointer;
   transition: all .2s ease;
-  background: transparent;
+  background-color: transparent;
   border-color: transparent;
   border-width: 18px 0;
   color: transparent;
 }
 
 .nui-range::-ms-fill-lower {
-  background: #3c93e2;
+  background-color: #3c93e2;
   border-radius: 4px;
 }
 
 .nui-range::-ms-fill-upper {
-  background: #3c93e2;
+  background-color: #3c93e2;
   border-radius: 4px;
 }
 
@@ -92,14 +92,14 @@ html {
   height: 18px;
   width: 18px;
   border-radius: 50%;
-  background: #fff;
+  background-color: #fff;
   cursor: pointer;
 }
 
 .nui-range:focus::-ms-fill-lower {
-  background: #3c93e2;
+  background-color: #3c93e2;
 }
 
 .nui-range:focus::-ms-fill-upper {
-  background: #3c93e2;
+  background-color: #3c93e2;
 }

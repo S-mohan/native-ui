@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Progress | native-ui</title>
+  <link rel="stylesheet" href="https://s-mohan.github.io/native-ui/assets/css/style.css?v=580703017e099ee9af4d5a1c875ac8d3896cfe56">
+  <link rel="stylesheet" href="./progress.css">
+  <style>
+    button {
+      display: inline-block;
+      padding: 5px 10px;
+      line-height: 20px;
+      font-family: inherit;
+    }
+
+    article>section {
+      margin-top: 20px;
+    }
+
+    progress {
+      margin-bottom: 16px;
+    }
+
+    .progress-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .progress-wrap progress,
+    .progress-wrap .label {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .progress-wrap progress {
+      width: 80%;
+      margin: 0;
+    }
+
+    .progress-wrap .label {
+      width: 20%;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <section class="page-header">
+    <h1 class="project-name">Progress</h1>
+    <h2 class="project-tagline">HTML原生UI组件</h2>
+    <a href="https://github.com/S-mohan/native-ui" class="btn">View on GitHub</a>
+    <a href="https://s-mohan.github.io/native-ui/progress/" class="btn">Document</a>
+  </section>
+  <article class="main-content">
+    <section>
+      <h3>default style</h3>
+      <progress max="100" value="75"></progress>
+    </section>
+
+    <section>
+      <h3>custom style</h3>
+      <progress max="100" value="20" class="nui-progress"></progress>
+      <progress max="100" value="46" class="nui-progress nui-progress--success"></progress>
+      <progress max="100" value="55" class="nui-progress nui-progress--warning"></progress>
+      <progress max="100" value="78" class="nui-progress nui-progress--danger"></progress>
+      <h3>striped</h3>
+      <progress max="100" value="25" class="nui-progress nui-progress--striped"></progress>
+      <progress max="100" value="50" class="nui-progress nui-progress--striped nui-progress--success"></progress>
+      <progress max="100" value="65" class="nui-progress nui-progress--striped nui-progress--warning"></progress>
+      <progress max="100" value="75" class="nui-progress nui-progress--striped nui-progress--danger" ></progress>
+    </section>
+
+    <section>
+      <h3>change value</h3>
+      <label class="progress-wrap">
+        <progress max="80" value="5" class="nui-progress nui-progress--striped" id="progress"></progress>
+        <span class="label" id="progress-value">5%</span>
+      </label>
+      <p>最大值80, 最小值0, 初始值5</p>
+      <button id="increase">increase</button>
+      <button id="decrease">decrease</button>
+    </section>
+
+  
+  </article>
+
+  <script>
+    var MIN_VALUE = 0
+    var MAX_VALUE = 80
+    var STEP = 5
+    var $progress = document.getElementById('progress')
+    var $value = document.getElementById('progress-value')
+    function update(value) {
+      $progress.value = value;
+      var percent = Math.floor((100 / MAX_VALUE) * value)
+      $value.textContent = percent + '%'
+    }
+    document.getElementById('increase').addEventListener('click', function () {
+      var currentVal = parseInt($progress.value)
+      if (currentVal < MAX_VALUE) update(parseInt(currentVal + STEP))
+    })
+    document.getElementById('decrease').addEventListener('click', function () {
+      var currentVal = parseInt($progress.value)
+      if (currentVal > MIN_VALUE) update(parseInt(currentVal - STEP))
+    })
+
+  </script>
+</body>
+</html>

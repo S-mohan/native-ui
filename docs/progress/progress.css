@@ -1,0 +1,63 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+:root {
+  --height: 16px;
+  --primary-color: #43a3fb;
+  --success-color: #28a745;
+  --danger-color: #DC3549;
+  --warning-color:#ffc107
+}
+
+
+.nui-progress {
+  width: 100%;
+  height: var(--height);
+  -webkit-appearance: none;
+  border-width: 0;
+  position: relative;
+  color: var(--primary-color);
+}
+
+.nui-progress::-webkit-progress-bar{
+  background-color: #e9ecef;
+  border-radius: 0;
+}
+
+.nui-progress::-moz-progress-bar {
+  background-color: #e9ecef;
+  border-radius: 0;
+}
+
+.nui-progress::-webkit-progress-value{
+  background-color: var(--primary-color);
+  position: relative;
+  cursor: default;
+}
+
+
+.nui-progress.nui-progress--success::-webkit-progress-value{
+  background-color: var(--success-color)
+}
+
+.nui-progress.nui-progress--danger::-webkit-progress-value{
+  background-color: var(--danger-color)
+}
+
+.nui-progress.nui-progress--warning::-webkit-progress-value{
+  background-color: var(--warning-color)
+}
+
+/* striped */ 
+.nui-progress.nui-progress--striped::-webkit-progress-value {
+  background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+  background-size: 1rem 1rem;
+}

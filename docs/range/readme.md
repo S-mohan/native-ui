@@ -12,10 +12,3 @@
 ```html
 <input type="range" class="nui-range">
 ```
-
-## 兼容性
-
-![兼容性](https://s-mohan.github.io/native-ui/img/range-support.png)
-
-
-## [example](https://s-mohan.github.io/native-ui/range/example.html)
