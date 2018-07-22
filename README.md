@@ -11,5 +11,8 @@
 ### Progress
 [![progress ui](https://s-mohan.github.io/native-ui/img/progress2.png)](https://s-mohan.github.io/native-ui/progress/)
 
+### Collapse
+[![collapse ui](https://s-mohan.github.io/native-ui/img/collapse.png)](https://s-mohan.github.io/native-ui/collapse/)
+
 ### Range
 [![range ui](https://s-mohan.github.io/native-ui/img/range2.png)](https://s-mohan.github.io/native-ui/range/)

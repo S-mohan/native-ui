@@ -1,0 +1,119 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --title-color: #303133;
+  --text-color: #5e6d82;
+  --title-size: 16px;
+  --text-size: 14px;
+}
+
+.nui-collapse {
+  position: relative;
+}
+
+.nui-collapse+.nui-collapse {
+  margin-top: 20px;
+}
+
+.nui-collapse>.nui-collapse__title {
+  font-weight: 500;
+  font-size: var(--title-size);
+  color: var(--title-color);
+  outline: none;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  padding-left: 20px;
+}
+
+.nui-collapse>.nui-collapse__title::-webkit-details-marker {
+  display: none;
+}
+
+.nui-collapse>.nui-collapse__title::before {
+  content: '';
+  position: absolute;
+  border: 6px solid transparent;
+  border-left-width: 8px;
+  border-right-width: 8px;
+  border-left-color: var(--title-color);
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.nui-collapse[open]>.nui-collapse__title::before {
+  border: 6px solid transparent;
+  border-top-width: 8px;
+  border-bottom-width: 8px;
+  border-top-color: var(--title-color);
+  margin-top: -4px;
+  transform: translateY(0)
+}
+
+.nui-collapse>.nui-collapse__body {
+  font-size: var(--text-size);
+  color: var(--text-color);
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.nui-collapse.nui-collapse--icon>.nui-collapse__title::before {
+  width: 14px;
+  height: 14px;
+  background-image: url(./plus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-width: 0;
+}
+
+.nui-collapse.nui-collapse--icon[open]>.nui-collapse__title::before {
+  background-image: url(./minus.svg);
+  border-width: 0;
+  transform: translateY(-50%);
+  margin: 0;
+}
+
+/* icon right*/
+
+.nui-collapse.nui-collapse--right {
+  border-bottom: 1px solid #ebeef5
+}
+
+.nui-collapse.nui-collapse--right>.nui-collapse__title {
+  padding: 10px 24px 10px 0;
+}
+
+.nui-collapse.nui-collapse--right>.nui-collapse__title::before {
+  left: auto;
+  right: 0;
+  width: 6px;
+  height: 6px;
+  border: 1px solid var(--title-color);
+  border-right-width: 0;
+  border-bottom-width: 0;
+  transform: translate(-50%) rotate(135deg);
+  transition: transform .2s;
+}
+
+.nui-collapse.nui-collapse--right[open]>.nui-collapse__title::before {
+  transform: translate(-50%) rotate(225deg);
+  margin: 0;
+}
+
+/* group */
+
+.nui-collapse-accordion {
+  position: relative;
+}

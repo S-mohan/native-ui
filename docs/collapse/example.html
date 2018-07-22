@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Collapse | native-ui</title>
+  <link rel="stylesheet" href="https://s-mohan.github.io/native-ui/assets/css/style.css?v=580703017e099ee9af4d5a1c875ac8d3896cfe56">
+  <link rel="stylesheet" href="./collapse.css">
+  <style>
+    article>section {
+      margin-top: 20px;
+    }
+
+    details {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <section class="page-header">
+    <h1 class="project-name">Collapse</h1>
+    <h2 class="project-tagline">HTML原生UI组件</h2>
+    <a href="https://github.com/S-mohan/native-ui" class="btn">View on GitHub</a>
+    <a href="https://s-mohan.github.io/native-ui/collapse/" class="btn">Document</a>
+  </section>
+  <article class="main-content">
+    <section>
+      <h3>Default style</h3>
+      <details>
+        <summary>前端魔法堂——异常不仅仅是try/catch</summary>
+        <p> 异常还是错误？它会如何影响我们的代码？内置异常类型有哪些？捕获“同步代码”中的"运行时异常"，用try/catch就够了。"万能"异常捕获者window.onerror，真的万能吗？Promise.reject也抛异常，怎么办？404等网络请求异常真心要后之后觉吗？</p>
+      </details>
+      <details>
+        <summary>在原生CSS中使用变量</summary>
+        <p> CSS 变量是由CSS作者定义的实体，其中包含要在整个文档中重复使用的特定值。使用自定义属性来设置变量名，并使用特定的 var() 来访问。css变量使用--开头；css变量分为全局变量和局部变量</p>
+      </details>
+      <details>
+        <summary>你不知道的CSS（三）</summary>
+        <p> 本文着重介绍CSS的伪类和伪选择器，讲解了伪类和伪选择器的区别，用`:valid`和`:invalid`来做表单即时校验，用`:target`来实现折叠面板，用`:not`来排除其他选择器，用`:nth-child(even/odd)`来实现隔行变色，用`::selection`来美化选中文本，用`::placeholder`来美化占位符，用`::first-letter`来实现段落首字下沉，用`::first-line`来特殊标记段落第一行</p>
+      </details>
+    </section>
+
+    <section>
+      <h3>Custom style · basic</h3>
+      <details class="nui-collapse">
+        <summary class="nui-collapse__title">前端魔法堂——异常不仅仅是try/catch</summary>
+        <p class="nui-collapse__body"> 异常还是错误？它会如何影响我们的代码？内置异常类型有哪些？捕获“同步代码”中的"运行时异常"，用try/catch就够了。"万能"异常捕获者window.onerror，真的万能吗？Promise.reject也抛异常，怎么办？404等网络请求异常真心要后之后觉吗？</p>
+      </details>
+      <details class="nui-collapse">
+        <summary class="nui-collapse__title">在原生CSS中使用变量</summary>
+        <p class="nui-collapse__body"> CSS 变量是由CSS作者定义的实体，其中包含要在整个文档中重复使用的特定值。使用自定义属性来设置变量名，并使用特定的 var() 来访问。css变量使用--开头；css变量分为全局变量和局部变量</p>
+      </details>
+      <details class="nui-collapse">
+        <summary class="nui-collapse__title">你不知道的CSS（三）</summary>
+        <p class="nui-collapse__body"> 本文着重介绍CSS的伪类和伪选择器，讲解了伪类和伪选择器的区别，用`:valid`和`:invalid`来做表单即时校验，用`:target`来实现折叠面板，用`:not`来排除其他选择器，用`:nth-child(even/odd)`来实现隔行变色，用`::selection`来美化选中文本，用`::placeholder`来美化占位符，用`::first-letter`来实现段落首字下沉，用`::first-line`来特殊标记段落第一行</p>
+      </details>
+
+      <h3>Custom style · custom icon</h3>
+      <details class="nui-collapse nui-collapse--icon">
+        <summary class="nui-collapse__title">前端魔法堂——异常不仅仅是try/catch</summary>
+        <p class="nui-collapse__body"> 异常还是错误？它会如何影响我们的代码？内置异常类型有哪些？捕获“同步代码”中的"运行时异常"，用try/catch就够了。"万能"异常捕获者window.onerror，真的万能吗？Promise.reject也抛异常，怎么办？404等网络请求异常真心要后之后觉吗？</p>
+      </details>
+      <details class="nui-collapse nui-collapse--icon">
+        <summary class="nui-collapse__title">在原生CSS中使用变量</summary>
+        <p class="nui-collapse__body"> CSS 变量是由CSS作者定义的实体，其中包含要在整个文档中重复使用的特定值。使用自定义属性来设置变量名，并使用特定的 var() 来访问。css变量使用--开头；css变量分为全局变量和局部变量</p>
+      </details>
+      <details class="nui-collapse nui-collapse--icon">
+        <summary class="nui-collapse__title">你不知道的CSS（三）</summary>
+        <p class="nui-collapse__body"> 本文着重介绍CSS的伪类和伪选择器，讲解了伪类和伪选择器的区别，用`:valid`和`:invalid`来做表单即时校验，用`:target`来实现折叠面板，用`:not`来排除其他选择器，用`:nth-child(even/odd)`来实现隔行变色，用`::selection`来美化选中文本，用`::placeholder`来美化占位符，用`::first-letter`来实现段落首字下沉，用`::first-line`来特殊标记段落第一行</p>
+      </details>
+
+      <h3>Custom style · arrow-right</h3>
+      <details class="nui-collapse nui-collapse--right">
+        <summary class="nui-collapse__title">前端魔法堂——异常不仅仅是try/catch</summary>
+        <p class="nui-collapse__body"> 异常还是错误？它会如何影响我们的代码？内置异常类型有哪些？捕获“同步代码”中的"运行时异常"，用try/catch就够了。"万能"异常捕获者window.onerror，真的万能吗？Promise.reject也抛异常，怎么办？404等网络请求异常真心要后之后觉吗？</p>
+      </details>
+      <details class="nui-collapse nui-collapse--right">
+        <summary class="nui-collapse__title">在原生CSS中使用变量</summary>
+        <p class="nui-collapse__body"> CSS 变量是由CSS作者定义的实体，其中包含要在整个文档中重复使用的特定值。使用自定义属性来设置变量名，并使用特定的 var() 来访问。css变量使用--开头；css变量分为全局变量和局部变量</p>
+      </details>
+      <details class="nui-collapse nui-collapse--right">
+        <summary class="nui-collapse__title">你不知道的CSS（三）</summary>
+        <p class="nui-collapse__body"> 本文着重介绍CSS的伪类和伪选择器，讲解了伪类和伪选择器的区别，用`:valid`和`:invalid`来做表单即时校验，用`:target`来实现折叠面板，用`:not`来排除其他选择器，用`:nth-child(even/odd)`来实现隔行变色，用`::selection`来美化选中文本，用`::placeholder`来美化占位符，用`::first-letter`来实现段落首字下沉，用`::first-line`来特殊标记段落第一行</p>
+      </details>
+
+      <h3>Custom style · accordion</h3>
+      <div class="nui-collapse-accordion">
+        <details class="nui-collapse nui-collapse--right">
+          <summary class="nui-collapse__title">前端魔法堂——异常不仅仅是try/catch</summary>
+          <p class="nui-collapse__body"> 异常还是错误？它会如何影响我们的代码？内置异常类型有哪些？捕获“同步代码”中的"运行时异常"，用try/catch就够了。"万能"异常捕获者window.onerror，真的万能吗？Promise.reject也抛异常，怎么办？404等网络请求异常真心要后之后觉吗？</p>
+        </details>
+        <details class="nui-collapse nui-collapse--right">
+          <summary class="nui-collapse__title">在原生CSS中使用变量</summary>
+          <p class="nui-collapse__body"> CSS 变量是由CSS作者定义的实体，其中包含要在整个文档中重复使用的特定值。使用自定义属性来设置变量名，并使用特定的 var() 来访问。css变量使用--开头；css变量分为全局变量和局部变量</p>
+        </details>
+        <details class="nui-collapse nui-collapse--right">
+          <summary class="nui-collapse__title">你不知道的CSS（三）</summary>
+          <p class="nui-collapse__body"> 本文着重介绍CSS的伪类和伪选择器，讲解了伪类和伪选择器的区别，用`:valid`和`:invalid`来做表单即时校验，用`:target`来实现折叠面板，用`:not`来排除其他选择器，用`:nth-child(even/odd)`来实现隔行变色，用`::selection`来美化选中文本，用`::placeholder`来美化占位符，用`::first-letter`来实现段落首字下沉，用`::first-line`来特殊标记段落第一行</p>
+        </details>
+      </div>
+    </section>
+  </article>
+
+  <script>
+    var ARRAY_SLICE = Array.prototype.slice
+    document.addEventListener('click', function(e) {
+      var target = e.target
+      var selector = '.nui-collapse-accordion .nui-collapse__title'
+      if (target.matches(selector) || target.closest(selector)) {
+        var collapse = target.closest('.nui-collapse')
+        if (collapse) {
+          var group = collapse.closest('.nui-collapse-accordion')
+          if (group) {
+            ARRAY_SLICE.call(group.querySelectorAll('.nui-collapse')).forEach(function(el) {
+              if (el !== collapse) {
+                el.open = false
+              }
+            })
+          }
+        }
+      }
+    })
+  </script>
+</body>
+</html>
